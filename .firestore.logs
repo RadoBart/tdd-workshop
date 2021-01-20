@@ -1,0 +1,23 @@
+Executing: /home/redesired/Documents/google-cloud-sdk/platform/cloud-firestore-emulator/cloud_firestore_emulator start --host=localhost --port=42042
+[firestore] Exception in thread "main" java.net.BindException: Address already in use
+[firestore] 	at sun.nio.ch.Net.bind0(Native Method)
+[firestore] 	at sun.nio.ch.Net.bind(Net.java:433)
+[firestore] 	at sun.nio.ch.Net.bind(Net.java:425)
+[firestore] 	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerS[firestore] Jan 20, 2021 4:44:57 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+[firestore] INFO: Detected non-HTTP/2 connection.
+[firestore] Jan 20, 2021 4:44:57 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+[firestore] INFO: Detected HTTP/2 connection.
+[firestore] *** shutting down gRPC server since JVM is shutting down
+[firestore] *** server shut down
+text.invokeBind(AbstractChannelHandlerContext.java:506)
+[firestore] 	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:491)
+[firestore] 	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+[firestore] 	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:248)
+[firestore] 	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+[firestore] 	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+[firestore] 	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+[firestore] 	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+[firestore] 	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+[firestore] 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+[firestore] 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+[firestore] 	at java.lang.Thread.run(Thread.java:748)
